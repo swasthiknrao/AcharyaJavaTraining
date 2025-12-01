@@ -691,9 +691,48 @@ FOR EACH LOOP IN JAVA
 
 
 
+--------------------------------------------------------------------------------------------------------------------
+methods in java
+
+	- a block of code that performs a specific task
+	- syntax:
+		returnType methodName(parameters) {
+			// code to be executed
+			return value; // if returnType is not void
+		}
+	- example:
+		public int add(int a, int b) {
+			return a + b;
+		}
 
 
-		
+
+Static methods vs Instance methods
+
+	- Static methods belong to the class and can be called without creating an instance of the class
+	- Instance methods belong to an instance of the class and require
+
+		example:
+public class Example {
+	public static int staticMethod(int a, int b) {
+		return a + b;
+	}
+
+	public int instanceMethod(int a, int b) {
+		return a * b;
+	}
+
+	public static void main(String[] args) {
+		// Calling static method
+		int sum = Example.staticMethod(5, 10);
+		System.out.println("Sum: " + sum);
+
+		// Calling instance method
+		Example example = new Example();
+		int product = example.instanceMethod(5, 10);
+		System.out.println("Product: " + product);
+	}
+}
 */
 
 import java.io.DataInputStream;
@@ -728,14 +767,26 @@ public class aigs {
 // 		}
 // 		System.out.println("Factorial of " + n + " is: " + fact);
 
-//sum of a digits of a numnet 6784 like6+7+8+4=25
-		int number = 6784;
-		int sum = 0;
-		while(number > 0){
-			int digit = number % 10;
-			sum += digit;
-			number /= 10;
-		}
-		System.out.println("Sum of digits: " + sum);
+// //sum of a digits of a numnet 6784 like6+7+8+4=25
+// 		int number = 6784;
+// 		int sum = 0;
+// 		while(number > 0){
+// 			int digit = number % 10;
+// 			sum += digit;
+// 			number /= 10;
+// 		}
+// 		System.out.println("Sum of digits: " + sum);
+
+
+
+ int  n =  -34;
+ n =n*(-1);
+ System.out.println(n);
+
+
+
+
 	}
+
+	
 }
