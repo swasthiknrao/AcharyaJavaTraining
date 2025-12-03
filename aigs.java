@@ -692,47 +692,33 @@ FOR EACH LOOP IN JAVA
 
 
 --------------------------------------------------------------------------------------------------------------------
-methods in java
+ARRAY
 
-	- a block of code that performs a specific task
-	- syntax:
-		returnType methodName(parameters) {
-			// code to be executed
-			return value; // if returnType is not void
-		}
-	- example:
-		public int add(int a, int b) {
-			return a + b;
-		}
+-  an array is a cotainer that holds a fixed number of values of a single data type
+-  arrays are used to store multiple values in a single variable, instead of declaring separate variables
+-  array elemts are stored in contiguos memory locations(by jvm)
+-  each element in the array is identified by an index, which starts from 0
+ex:
+int[] arr = new int[5]; // declare an array of integers with size 5
+arr[0] = 10; // assign value to the first element
 
+WHy arrays are used?
+- rather than takiong multiple variables  for big sizes 
+int num1
+int num2
+int num3
+........
+int num100
 
+we can use a songle array variable to accomodate 60 values ,SO its easy to mantain the code 
 
-Static methods vs Instance methods
+ how to do aboove:
+ Daclare an array:
 
-	- Static methods belong to the class and can be called without creating an instance of the class
-	- Instance methods belong to an instance of the class and require
+ int arr[];
+[] means its an array , arr is aame  of the array and arr is of type integer...
+ ----------------------------------------------------------------------------------------------------------------------
 
-		example:
-public class Example {
-	public static int staticMethod(int a, int b) {
-		return a + b;
-	}
-
-	public int instanceMethod(int a, int b) {
-		return a * b;
-	}
-
-	public static void main(String[] args) {
-		// Calling static method
-		int sum = Example.staticMethod(5, 10);
-		System.out.println("Sum: " + sum);
-
-		// Calling instance method
-		Example example = new Example();
-		int product = example.instanceMethod(5, 10);
-		System.out.println("Product: " + product);
-	}
-}
 */
 
 import java.io.DataInputStream;
@@ -779,14 +765,142 @@ public class aigs {
 
 
 
- int  n =  -34;
- n =n*(-1);
- System.out.println(n);
+//  int  n =  -34;
+//  n =n*(-1);
+//  System.out.println(n);
+
+
+
+// //take input from teh usesr chenteh the number is prime or not
+// 		System.out.print("Enter a number: ");
+// 		int num = Integer.parseInt(in.readLine());
+
+// 		boolean isPrime = true;
+
+// 		if (num <= 1) {
+// 			isPrime = false;
+// 		} else {
+// 			for (int i = 2; i <= Math.sqrt(num); i++) {
+// 				if (num % i == 0) {
+// 					isPrime = false;
+// 					break;
+// 				}
+// 			}
+// 		}
+
+// 		if (isPrime) {
+// 			System.out.println(num + " is a prime number.");
+// 		} else {
+// 			System.out.println(num + " is not a prime number.");
+// 		}
 
 
 
 
-	}
+
+
+
+// //suBset 
+
+// //	public static Boolean subArray(int a[], int b[]) {
+// //		int count = 00;
+// //		for (int i = 0; i < b.length; i++) {
+// //			Boolean f = false;
+// //			for (int j = 0; j < a.length; j++) {
+// //				if (a[j] == b[i]) {
+// //					f = true;
+// //					break;
+// //				}
+// //			}
+// //			if (f) {
+// //				count++;
+// //			} else {
+// //				return false;
+// //			}
+// //
+// //		}
+// //		return b.length == count;
+// //
+// //	}
+// //
+// //	public static void main(String[] args) throws IOException {
+// //		Scanner sc = new Scanner(System.in);
+// //		System.out.print("Enter the size 1 : ");
+// //		int n = sc.nextInt();
+// //
+// //		int[] a = new int[n];
+// //
+// //		System.out.println("Enter the array elements:");
+// //		for (int i = 0; i < n; i++) {
+// //			a[i] = sc.nextInt();
+// //		}
+// //
+// //		System.out.print("Enter the size 2: ");
+// //		int x = sc.nextInt();
+// //
+// //		int[] b = new int[x];
+// //		for (int i = 0; i < x; i++) {
+// //			b[i] = sc.nextInt();
+// //		}
+// //		Boolean g = subArray(a, b);
+// //		if (g) {
+// //			int f=0;
+// //			for (int j = 0; j < n; j++) {
+// //		
+// //				if(b[0]==a[j]) {
+// //					f=j;
+// //				}
+// //					
+// //			}
+// //			System.out.println("a sub set from "+f+"to"+(f+x-1));
+// //		}
+// //			 else {
+// //			System.out.println("not a sub set:");
+// //
+// //		}
+// //
+// //	}
+	
+// 	 public static void subset(int a[], int f, int e) {
+
+
+// 	        int[] b = new int[e - f];
+// 	        int j = 0;
+// 	        for (int i = f; i < e; i++) {
+// 	            b[j] = a[i];
+// 	            j++;
+// 	        }
+
+// 	        for (int x : b) {
+// 	            System.out.println(x);
+// 	        }
+// 	    }
+
+// 	    public static void main(String[] args) {
+// 	        Scanner sc = new Scanner(System.in);
+
+// 	        System.out.print("Enter size of array: ");
+// 	        int n = sc.nextInt();
+
+// 	        int[] a = new int[n];
+// 	        System.out.println("Enter array elements:");
+// 	        for (int i = 0; i < n; i++) {
+// 	            a[i] = sc.nextInt();
+// 	        }
+
+// 	        System.out.print("Enter start index f: ");
+// 	        int f = sc.nextInt();
+
+// 	        System.out.print("Enter end index e: ");
+// 	        int e = sc.nextInt();
+
+// 	        subset(a, f, e);
+// 	    }
+	
+	
+	
+	
 
 	
+}
 }
