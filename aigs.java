@@ -723,6 +723,7 @@ we can use a songle array variable to accomodate 60 values ,SO its easy to manta
 
 import java.io.DataInputStream;
 import java.io.IOException;
+import java.util.Scanner;
 
 public class aigs {
 
@@ -896,11 +897,26 @@ public class aigs {
 
 // 	        subset(a, f, e);
 // 	    }
-	
-	
-	
+// calulteteh number of days i am alve from dob tilltoday  in number of days only
+
+	Scanner sc = new Scanner(System.in);
+	System.out.print("Enter your date of birth (dd mm yyyy): ");
+	int dd = sc.nextInt();
+	int mm = sc.nextInt();
+	int yyyy = sc.nextInt();
+	java.time.LocalDate dob = java.time.LocalDate.of(yyyy, mm, dd);
+	java.time.LocalDate today = java.time.LocalDate.now();
+	java.time.Period p = java.time.Period.between(dob, today);
+	int daysLived = p.getYears() * 365 + p.getMonths() * 30 + p.getDays();
+	System.out.println("You have lived for " + daysLived + " days.");
+
+		}
+
+
+
+
+		
 	
 
-	
-}
+
 }
