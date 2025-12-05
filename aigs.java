@@ -1,4 +1,5 @@
 
+
 /* 
  Java primitive data types (range, size, default, example)
 
