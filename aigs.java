@@ -897,26 +897,78 @@ public class aigs {
 
 // 	        subset(a, f, e);
 // 	    }
-// calulteteh number of days i am alve from dob tilltoday  in number of days only
+// // calulte the number of days i am alve from dob till today  in number of days only withput using external library
+	   
+// 			 Scanner sc = new Scanner(System.in);
 
-	Scanner sc = new Scanner(System.in);
-	System.out.print("Enter your date of birth (dd mm yyyy): ");
-	int dd = sc.nextInt();
-	int mm = sc.nextInt();
-	int yyyy = sc.nextInt();
-	java.time.LocalDate dob = java.time.LocalDate.of(yyyy, mm, dd);
-	java.time.LocalDate today = java.time.LocalDate.now();
-	java.time.Period p = java.time.Period.between(dob, today);
-	int daysLived = p.getYears() * 365 + p.getMonths() * 30 + p.getDays();
-	System.out.println("You have lived for " + daysLived + " days.");
+// 	        System.out.print("Enter your date of birth (dd mm yyyy): ");
+// 	        int dd = sc.nextInt();
+// 	        int mm = sc.nextInt();
+// 	        int yyyy = sc.nextInt();
 
+// 	        // Current date
+// 	        int currentDay = 15;
+// 	        int currentMonth = 6;
+// 	        int currentYear = 2024;
+
+// 	        // Days in each month
+// 	        int[] daysInMonth = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
+
+// 	        // Adjust for leap year
+// 	        if ((currentYear % 4 == 0 && currentYear % 100 != 0) || (currentYear % 400 == 0)) {
+// 	            daysInMonth[1] = 29;
+// 	        }
+
+// 	        // Calculate total days from dob to current date
+// 	        int totalDays = 0;
+
+// 	        // Add days for complete years
+// 	        for (int year = yyyy; year < currentYear; year++) {
+// 	            totalDays += (year % 4 == 0 && year % 100 != 0) || (year % 400 == 0) ? 366 : 365;
+// 	        }
+
+// 	        // Add days for complete months in the current year
+// 	        for (int month = 1; month < currentMonth; month++) {
+// 	            totalDays += daysInMonth[month - 1];
+// 	        }
+
+// 	        // Add days in the current month
+// 	        totalDays += currentDay;
+
+// 	        // Subtract days from dob month
+// 	        for (int month = 1; month < mm; month++) {
+// 	            totalDays -= daysInMonth[month - 1];
+// 	        }
+// +
+// \
+// 	        // Subtract days in dob month
+// 	        totalDays -= dd;
+
+// 	        System.out.println("Total days alive: " + totalDays);
+// 	    }													
+
+
+//  in a chess how many steps teh knight can make whini give teh position of t eh knight lin 6,2
+		int knightRow = 6;
+		int knightCol = 2;
+
+		int[][] moves = {
+		    {2, 1}, {1, 2}, {-1, 2}, {-2, 1},
+		    {-2, -1}, {-1, -2}, {1, -2}, {2, -1}
+		};
+
+		int count = 0;
+
+		for (int[] move : moves) {
+		    int newRow = knightRow + move[0];
+		    int newCol = knightCol + move[1];
+
+		    if (newRow >= 1 && newRow <= 8 && newCol >= 1 && newCol <= 8) {
+		        count++;
+		    }
 		}
 
-
-
-
-		
-	
-
-
+		System.out.println("The knight can make " + count + " valid moves.");	
+	}
 }
+
