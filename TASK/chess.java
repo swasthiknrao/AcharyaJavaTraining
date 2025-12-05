@@ -2,7 +2,7 @@ package TASK;
 
 import java.util.Scanner;
 
-public class chess {
+public class Chess {
     public static void main(String args[]) {
         System.out.println("Enter the position of the knght : ");
 
