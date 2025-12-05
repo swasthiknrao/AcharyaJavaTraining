@@ -6,13 +6,13 @@ import java.util.Scanner;
 public class No6IsGreat {
     public static void main(String args[]) {
         Scanner sc = new Scanner(System.in);
-        int a = sc.nextInt();
-        int b = sc.nextInt();
-        System.out.println(isGreat(a, b));
+        int num1 = sc.nextInt();
+        int num2 = sc.nextInt();
+        System.out.println(isGreat(num1, num2));
     }
 
-    public static boolean isGreat(int a, int b) {
-        if (a == 6 || b == 6 || (a + b) == 6 || Math.abs(a - b) == 6) {
+    public static boolean isGreat(int num1, int num2) {
+        if (num1 == 6 || num2 == 6 || (num1 + num2) == 6 || Math.abs(num1 - num2) == 6) {
             return true;
         } else {
             return false;
