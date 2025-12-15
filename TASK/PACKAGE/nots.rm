@@ -1,0 +1,37 @@
+In Java, a package is a namespace that groups related classes, interfaces, and enums.
+
+It is mainly used to:
+
+Organize code logically for better maintainability.
+
+Avoid naming conflicts between classes from different sources.
+
+Control access to classes and members (via access modifiers).
+*****************************************************************************************
+Types of Packages in Java
+1. Built-in Packages   : Provided by the Java API (e.g., java.util, java.io, java.sql).
+
+2. User-defined Packages  : Created by programmers to organize their own classes
+
+
+*************************
+
+Syntax Packages
+Package pack;
+package pack1.pack2;
+**********************************************
+how to acess the methds and variables of classes on other package into your classes
+import packagename.ClassName;  //to access the members of t eh ClassName
+*************************************************************
+Pollymorphism  :  Pollymorphism    means onr thing exhibiting  many forms
+
+
+1.Complie Time Pollymorphism
+Compile-TIme Pollymorphism in java  is also known as static  polymorphsm and also known as  methd overloading . Ths happens when multiple methds in the same classs class havethe same name but different  signature
+
+when we say sognature , it can be the following :
+
+a) number of parameters 
+b)type of parameters,
+c) sequence of parameters
+if one of the above  if differnt thats enough , to call it methid overloading.
