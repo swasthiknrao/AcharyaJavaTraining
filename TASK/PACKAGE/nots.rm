@@ -35,3 +35,21 @@ a) number of parameters
 b)type of parameters,
 c) sequence of parameters
 if one of the above  if differnt thats enough , to call it methid overloading.
+
+
+
+
+********************************************************************************
+INHERITENCE
+
+Inheritance
+
+Inheritance is the process by which one class acquires the properties (data members) and functionalities (methods) of another class.
+
+A class that is derived from another class is called a subclass (also known as a derived class, extended class, or child class).
+
+The class from which the subclass is derived is called a superclass (also known as a base class or parent class).
+
+Using inheritance, you can create a general class, also called a superclass, which is placed at the top.
+
+This superclass can then be inherited by other more specific classes called subclasses.
